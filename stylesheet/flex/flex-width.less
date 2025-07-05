@@ -1,0 +1,711 @@
+.f-100 { flex: 0 0 100%; }
+.f-50 { flex: 0 0 calc(100% / 2); }
+.f-33 { flex: 0 0 calc(100% / 3); }
+.f-25 { flex: 0 0 calc(100% / 4); }
+.f-20 { flex: 0 0 calc(100% / 5); }
+.f-16 { flex: 0 0 calc(100% / 8); }
+.f-10 { flex: 0 0 calc(100% / 10); }
+.f-8 { flex: 0 0 calc(100% / 12); }
+.f-auto {
+    flex: 1 1 auto;
+    min-width: auto;
+    width: initial;
+    max-width: fit-content;
+}
+.f-fill {
+    flex: 1;
+    min-width: initial;
+    width: 100%;
+    max-width: initial;
+}
+
+.gap-1 {
+    & > .f-100 { flex: 0 0 100%; }
+    & > .f-50 { flex: 0 0 calc((100% - (1 * var(--distance-1))) / 2); }
+    & > .f-33 { flex: 0 0 calc((100% - (2 * var(--distance-1))) / 3); }
+    & > .f-25 { flex: 0 0 calc((100% - (3 * var(--distance-1))) / 4); }
+    & > .f-20 { flex: 0 0 calc((100% - (4 * var(--distance-1))) / 5); }
+    & > .f-16 { flex: 0 0 calc((100% - (5 * var(--distance-1))) / 6); }
+    & > .f-10 { flex: 0 0 calc((100% - (9 * var(--distance-1))) / 10); }
+    & > .f-8 { flex: 0 0 calc((100% - (11 * var(--distance-1))) / 12); }
+    & > .f-fill {
+        flex: 1;
+        min-width: initial;
+        width: calc(100% - var(--distance-1));
+        max-width: initial;
+    }
+}
+
+.gap-2 {
+    & > .f-100 { flex: 0 0 100%; }
+    & > .f-50 { flex: 0 0 calc((100% - (1 * var(--distance-2))) / 2); }
+    & > .f-33 { flex: 0 0 calc((100% - (2 * var(--distance-2))) / 3); }
+    & > .f-25 { flex: 0 0 calc((100% - (3 * var(--distance-2))) / 4); }
+    & > .f-20 { flex: 0 0 calc((100% - (4 * var(--distance-2))) / 5); }
+    & > .f-16 { flex: 0 0 calc((100% - (5 * var(--distance-2))) / 6); }
+    & > .f-10 { flex: 0 0 calc((100% - (9 * var(--distance-2))) / 10); }
+    & > .f-8 { flex: 0 0 calc((100% - (11 * var(--distance-2))) / 12); }
+    & > .f-fill { 
+        flex: 1;
+        min-width: initial;
+        width: calc(100% - var(--distance-2));
+        max-width: initial;
+    }
+}
+
+.gap-3 {
+    & > .f-100 { flex: 0 0 100%; }
+    & > .f-50 { flex: 0 0 calc((100% - (1 * var(--distance-3))) / 2); }
+    & > .f-33 { flex: 0 0 calc((100% - (2 * var(--distance-3))) / 3); }
+    & > .f-25 { flex: 0 0 calc((100% - (3 * var(--distance-3))) / 4); }
+    & > .f-20 { flex: 0 0 calc((100% - (4 * var(--distance-3))) / 5); }
+    & > .f-16 { flex: 0 0 calc((100% - (5 * var(--distance-3))) / 6); }
+    & > .f-10 { flex: 0 0 calc((100% - (9 * var(--distance-3))) / 10); }
+    & > .f-8 { flex: 0 0 calc((100% - (11 * var(--distance-3))) / 12); }
+    & > .f-fill {
+        flex: 1;
+        min-width: initial;
+        width: calc(100% - var(--distance-3));
+        max-width: initial;
+    }
+}
+
+.gap-4 {
+    & > .f-100 { flex: 0 0 100%; }
+    & > .f-50 { flex: 0 0 calc((100% - (1 * var(--distance-4))) / 2); }
+    & > .f-33 { flex: 0 0 calc((100% - (2 * var(--distance-4))) / 3); }
+    & > .f-25 { flex: 0 0 calc((100% - (3 * var(--distance-4))) / 4); }
+    & > .f-20 { flex: 0 0 calc((100% - (4 * var(--distance-4))) / 5); }
+    & > .f-16 { flex: 0 0 calc((100% - (5 * var(--distance-4))) / 6); }
+    & > .f-10 { flex: 0 0 calc((100% - (9 * var(--distance-4))) / 10); }
+    & > .f-8 { flex: 0 0 calc((100% - (11 * var(--distance-4))) / 12); }
+    & > .f-fill {
+        flex: 1;
+        min-width: initial;
+        width: calc(100% - var(--distance-4));
+        max-width: initial;
+    }
+}
+
+.gap-5  {
+    & > .f-100 { flex: 0 0 100%; }
+    & > .f-50 { flex: 0 0 calc((100% - (1 * var(--distance-5))) / 2); }
+    & > .f-33 { flex: 0 0 calc((100% - (2 * var(--distance-5))) / 3); }
+    & > .f-25 { flex: 0 0 calc((100% - (3 * var(--distance-5))) / 4); }
+    & > .f-20 { flex: 0 0 calc((100% - (4 * var(--distance-5))) / 5); }
+    & > .f-16 { flex: 0 0 calc((100% - (5 * var(--distance-5))) / 6); }
+    & > .f-10 { flex: 0 0 calc((100% - (9 * var(--distance-5))) / 10); }
+    & > .f-8 { flex: 0 0 calc((100% - (11 * var(--distance-5))) / 12); }
+    & > .f-fill { 
+        flex: 1;
+        min-width: initial;
+        width: calc(100% - var(--distance-5));
+        max-width: initial;
+    }
+}
+
+
+@media (min-width: @md) and (max-width: @lg) {
+    .tf-100 { .f-100(); }
+    .tf-50 { .f-50(); }
+    .tf-33 { .f-33(); }
+    .tf-25 { .f-25(); }
+    .tf-20 { .f-20(); }
+    .tf-16 { .f-16(); }
+    .tf-10 { .f-10(); }
+    .tf-8 { .f-8(); }
+    .tf-auto { .f-auto(); }
+    .tf-fill { .f-fill(); }
+
+    .gap-1 {
+        & > .tf-100 { flex: 0 0 100%; }
+        & > .tf-50 { flex: 0 0 calc((100% - (1 * var(--distance-1))) / 2); }
+        & > .tf-33 { flex: 0 0 calc((100% - (2 * var(--distance-1))) / 3); }
+        & > .tf-25 { flex: 0 0 calc((100% - (3 * var(--distance-1))) / 4); }
+        & > .tf-20 { flex: 0 0 calc((100% - (4 * var(--distance-1))) / 5); }
+        & > .tf-16 { flex: 0 0 calc((100% - (5 * var(--distance-1))) / 6); }
+        & > .tf-10 { flex: 0 0 calc((100% - (9 * var(--distance-1))) / 10); }
+        & > .tf-8 { flex: 0 0 calc((100% - (11 * var(--distance-1))) / 12); }
+        & > .tf-fill {
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-1));
+            max-width: initial;
+        }
+    }
+    
+    .gap-2 {
+        & > .tf-100 { flex: 0 0 100%; }
+        & > .tf-50 { flex: 0 0 calc((100% - (1 * var(--distance-2))) / 2); }
+        & > .tf-33 { flex: 0 0 calc((100% - (2 * var(--distance-2))) / 3); }
+        & > .tf-25 { flex: 0 0 calc((100% - (3 * var(--distance-2))) / 4); }
+        & > .tf-20 { flex: 0 0 calc((100% - (4 * var(--distance-2))) / 5); }
+        & > .tf-16 { flex: 0 0 calc((100% - (5 * var(--distance-2))) / 6); }
+        & > .tf-10 { flex: 0 0 calc((100% - (9 * var(--distance-2))) / 10); }
+        & > .tf-8 { flex: 0 0 calc((100% - (11 * var(--distance-2))) / 12); }
+        & > .tf-fill { 
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-2));
+            max-width: initial;
+        }
+    }
+    
+    .gap-3 {
+        & > .tf-100 { flex: 0 0 100%; }
+        & > .tf-50 { flex: 0 0 calc((100% - (1 * var(--distance-3))) / 2); }
+        & > .tf-33 { flex: 0 0 calc((100% - (2 * var(--distance-3))) / 3); }
+        & > .tf-25 { flex: 0 0 calc((100% - (3 * var(--distance-3))) / 4); }
+        & > .tf-20 { flex: 0 0 calc((100% - (4 * var(--distance-3))) / 5); }
+        & > .tf-16 { flex: 0 0 calc((100% - (5 * var(--distance-3))) / 6); }
+        & > .tf-10 { flex: 0 0 calc((100% - (9 * var(--distance-3))) / 10); }
+        & > .tf-8 { flex: 0 0 calc((100% - (11 * var(--distance-3))) / 12); }
+        & > .tf-fill {
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-3));
+            max-width: initial;
+        }
+    }
+    
+    .gap-4 {
+        & > .tf-100 { flex: 0 0 100%; }
+        & > .tf-50 { flex: 0 0 calc((100% - (1 * var(--distance-4))) / 2); }
+        & > .tf-33 { flex: 0 0 calc((100% - (2 * var(--distance-4))) / 3); }
+        & > .tf-25 { flex: 0 0 calc((100% - (3 * var(--distance-4))) / 4); }
+        & > .tf-20 { flex: 0 0 calc((100% - (4 * var(--distance-4))) / 5); }
+        & > .tf-16 { flex: 0 0 calc((100% - (5 * var(--distance-4))) / 6); }
+        & > .tf-10 { flex: 0 0 calc((100% - (9 * var(--distance-4))) / 10); }
+        & > .tf-8 { flex: 0 0 calc((100% - (11 * var(--distance-4))) / 12); }
+        & > .tf-fill {
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-4));
+            max-width: initial;
+        }
+    }
+    
+    .gap-5  {
+        & > .tf-100 { flex: 0 0 100%; }
+        & > .tf-50 { flex: 0 0 calc((100% - (1 * var(--distance-5))) / 2); }
+        & > .tf-33 { flex: 0 0 calc((100% - (2 * var(--distance-5))) / 3); }
+        & > .tf-25 { flex: 0 0 calc((100% - (3 * var(--distance-5))) / 4); }
+        & > .tf-20 { flex: 0 0 calc((100% - (4 * var(--distance-5))) / 5); }
+        & > .tf-16 { flex: 0 0 calc((100% - (5 * var(--distance-5))) / 6); }
+        & > .tf-10 { flex: 0 0 calc((100% - (9 * var(--distance-5))) / 10); }
+        & > .tf-8 { flex: 0 0 calc((100% - (11 * var(--distance-5))) / 12); }
+        & > .tf-fill { 
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-5));
+            max-width: initial;
+        }
+    }
+
+    .tgap-0 {
+        .f-100 { flex: 0 0 100%; }
+        .f-50 { flex: 0 0 calc(100% / 2); }
+        .f-33 { flex: 0 0 calc(100% / 3); }
+        .f-25 { flex: 0 0 calc(100% / 4); }
+        .f-20 { flex: 0 0 calc(100% / 5); }
+        .f-16 { flex: 0 0 calc(100% / 8); }
+        .f-10 { flex: 0 0 calc(100% / 10); }
+        .f-8 { flex: 0 0 calc(100% / 12); }
+        .f-auto {
+            flex: 1 1 auto;
+            min-width: auto;
+            width: initial;
+            max-width: fit-content;
+        }
+        .f-fill {
+            flex: 1;
+            min-width: initial;
+            width: 100%;
+            max-width: initial;
+        }
+
+        .tf-100 { flex: 0 0 100%; }
+        .tf-50 { flex: 0 0 calc(100% / 2); }
+        .tf-33 { flex: 0 0 calc(100% / 3); }
+        .tf-25 { flex: 0 0 calc(100% / 4); }
+        .tf-20 { flex: 0 0 calc(100% / 5); }
+        .tf-16 { flex: 0 0 calc(100% / 8); }
+        .tf-10 { flex: 0 0 calc(100% / 10); }
+        .tf-8 { flex: 0 0 calc(100% / 12); }
+        .tf-auto {
+            flex: 1 1 auto;
+            min-width: auto;
+            width: initial;
+            max-width: fit-content;
+        }
+        .tf-fill {
+            flex: 1;
+            min-width: initial;
+            width: 100%;
+            max-width: initial;
+        }
+    }
+
+    .tgap-1 {
+        & > .f-100 { flex: 0 0 100%; }
+        & > .f-50 { flex: 0 0 calc((100% - (1 * var(--distance-1))) / 2); }
+        & > .f-33 { flex: 0 0 calc((100% - (2 * var(--distance-1))) / 3); }
+        & > .f-25 { flex: 0 0 calc((100% - (3 * var(--distance-1))) / 4); }
+        & > .f-20 { flex: 0 0 calc((100% - (4 * var(--distance-1))) / 5); }
+        & > .f-16 { flex: 0 0 calc((100% - (5 * var(--distance-1))) / 6); }
+        & > .f-10 { flex: 0 0 calc((100% - (9 * var(--distance-1))) / 10); }
+        & > .f-8 { flex: 0 0 calc((100% - (11 * var(--distance-1))) / 12); }
+        & > .f-fill {
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-1));
+            max-width: initial;
+        }
+
+        & > .tf-100 { flex: 0 0 100%; }
+        & > .tf-50 { flex: 0 0 calc((100% - (1 * var(--distance-1))) / 2); }
+        & > .tf-33 { flex: 0 0 calc((100% - (2 * var(--distance-1))) / 3); }
+        & > .tf-25 { flex: 0 0 calc((100% - (3 * var(--distance-1))) / 4); }
+        & > .tf-20 { flex: 0 0 calc((100% - (4 * var(--distance-1))) / 5); }
+        & > .tf-16 { flex: 0 0 calc((100% - (5 * var(--distance-1))) / 6); }
+        & > .tf-10 { flex: 0 0 calc((100% - (9 * var(--distance-1))) / 10); }
+        & > .tf-8 { flex: 0 0 calc((100% - (11 * var(--distance-1))) / 12); }
+        & > .tf-fill {
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-1));
+            max-width: initial;
+        }
+    }
+    
+    .tgap-2 {
+        & > .f-100 { flex: 0 0 100%; }
+        & > .f-50 { flex: 0 0 calc((100% - (1 * var(--distance-2))) / 2); }
+        & > .f-33 { flex: 0 0 calc((100% - (2 * var(--distance-2))) / 3); }
+        & > .f-25 { flex: 0 0 calc((100% - (3 * var(--distance-2))) / 4); }
+        & > .f-20 { flex: 0 0 calc((100% - (4 * var(--distance-2))) / 5); }
+        & > .f-16 { flex: 0 0 calc((100% - (5 * var(--distance-2))) / 6); }
+        & > .f-10 { flex: 0 0 calc((100% - (9 * var(--distance-2))) / 10); }
+        & > .f-8 { flex: 0 0 calc((100% - (11 * var(--distance-2))) / 12); }
+        & > .f-fill { 
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-2));
+            max-width: initial;
+        }
+
+        & > .tf-100 { flex: 0 0 100%; }
+        & > .tf-50 { flex: 0 0 calc((100% - (1 * var(--distance-2))) / 2); }
+        & > .tf-33 { flex: 0 0 calc((100% - (2 * var(--distance-2))) / 3); }
+        & > .tf-25 { flex: 0 0 calc((100% - (3 * var(--distance-2))) / 4); }
+        & > .tf-20 { flex: 0 0 calc((100% - (4 * var(--distance-2))) / 5); }
+        & > .tf-16 { flex: 0 0 calc((100% - (5 * var(--distance-2))) / 6); }
+        & > .tf-10 { flex: 0 0 calc((100% - (9 * var(--distance-2))) / 10); }
+        & > .tf-8 { flex: 0 0 calc((100% - (11 * var(--distance-2))) / 12); }
+        & > .tf-fill { 
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-2));
+            max-width: initial;
+        }
+    }
+    
+    .tgap-3 {
+        & > .f-100 { flex: 0 0 100%; }
+        & > .f-50 { flex: 0 0 calc(50% - (var(--distance-3) / 2)); }
+        & > .f-33 { flex: 0 0 calc((100% - (2 * var(--distance-3))) / 3); }
+        & > .f-25 { flex: 0 0 calc((100% - (3 * var(--distance-3))) / 4); }
+        & > .f-20 { flex: 0 0 calc((100% - (4 * var(--distance-3))) / 5); }
+        & > .f-16 { flex: 0 0 calc((100% - (5 * var(--distance-3))) / 6); }
+        & > .f-10 { flex: 0 0 calc((100% - (9 * var(--distance-3))) / 10); }
+        & > .f-8 { flex: 0 0 calc((100% - (11 * var(--distance-3))) / 12); }
+        & > .f-fill {
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-3));
+            max-width: initial;
+        }
+
+        & > .tf-100 { flex: 0 0 100%; }
+        & > .tf-50 { flex: 0 0 calc((100% - (1 * var(--distance-3))) / 2); }
+        & > .tf-33 { flex: 0 0 calc((100% - (2 * var(--distance-3))) / 3); }
+        & > .tf-25 { flex: 0 0 calc((100% - (3 * var(--distance-3))) / 4); }
+        & > .tf-20 { flex: 0 0 calc((100% - (4 * var(--distance-3))) / 5); }
+        & > .tf-16 { flex: 0 0 calc((100% - (5 * var(--distance-3))) / 6); }
+        & > .tf-10 { flex: 0 0 calc((100% - (9 * var(--distance-3))) / 10); }
+        & > .tf-8 { flex: 0 0 calc((100% - (11 * var(--distance-3))) / 12); }
+        & > .tf-fill {
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-3));
+            max-width: initial;
+        }
+    }
+    
+    .tgap-4 {
+        & > .f-100 { flex: 0 0 100%; }
+        & > .f-50 { flex: 0 0 calc((100% - (1 * var(--distance-4))) / 2); }
+        & > .f-33 { flex: 0 0 calc((100% - (2 * var(--distance-4))) / 3); }
+        & > .f-25 { flex: 0 0 calc((100% - (3 * var(--distance-4))) / 4); }
+        & > .f-20 { flex: 0 0 calc((100% - (4 * var(--distance-4))) / 5); }
+        & > .f-16 { flex: 0 0 calc((100% - (5 * var(--distance-4))) / 6); }
+        & > .f-10 { flex: 0 0 calc((100% - (9 * var(--distance-4))) / 10); }
+        & > .f-8 { flex: 0 0 calc((100% - (11 * var(--distance-4))) / 12); }
+        & > .f-fill {
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-4));
+            max-width: initial;
+        }
+
+        & > .tf-100 { flex: 0 0 100%; }
+        & > .tf-50 { flex: 0 0 calc((100% - (1 * var(--distance-4))) / 2); }
+        & > .tf-33 { flex: 0 0 calc((100% - (2 * var(--distance-4))) / 3); }
+        & > .tf-25 { flex: 0 0 calc((100% - (3 * var(--distance-4))) / 4); }
+        & > .tf-20 { flex: 0 0 calc((100% - (4 * var(--distance-4))) / 5); }
+        & > .tf-16 { flex: 0 0 calc((100% - (5 * var(--distance-4))) / 6); }
+        & > .tf-10 { flex: 0 0 calc((100% - (9 * var(--distance-4))) / 10); }
+        & > .tf-8 { flex: 0 0 calc((100% - (11 * var(--distance-4))) / 12); }
+        & > .tf-fill {
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-4));
+            max-width: initial;
+        }
+    }
+    
+    .tgap-5  {
+        & > .f-100 { flex: 0 0 100%; }
+        & > .f-50 { flex: 0 0 calc((100% - (1 * var(--distance-5))) / 2); }
+        & > .f-33 { flex: 0 0 calc((100% - (2 * var(--distance-5))) / 3); }
+        & > .f-25 { flex: 0 0 calc((100% - (3 * var(--distance-5))) / 4); }
+        & > .f-20 { flex: 0 0 calc((100% - (4 * var(--distance-5))) / 5); }
+        & > .f-16 { flex: 0 0 calc((100% - (5 * var(--distance-5))) / 6); }
+        & > .f-10 { flex: 0 0 calc((100% - (9 * var(--distance-5))) / 10); }
+        & > .f-8 { flex: 0 0 calc((100% - (11 * var(--distance-5))) / 12); }
+        & > .f-fill { 
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-5));
+            max-width: initial;
+        }
+
+        & > .tf-100 { flex: 0 0 100%; }
+        & > .tf-50 { flex: 0 0 calc((100% - (1 * var(--distance-5))) / 2); }
+        & > .tf-33 { flex: 0 0 calc((100% - (2 * var(--distance-5))) / 3); }
+        & > .tf-25 { flex: 0 0 calc((100% - (3 * var(--distance-5))) / 4); }
+        & > .tf-20 { flex: 0 0 calc((100% - (4 * var(--distance-5))) / 5); }
+        & > .tf-16 { flex: 0 0 calc((100% - (5 * var(--distance-5))) / 6); }
+        & > .tf-10 { flex: 0 0 calc((100% - (9 * var(--distance-5))) / 10); }
+        & > .tf-8 { flex: 0 0 calc((100% - (11 * var(--distance-5))) / 12); }
+        & > .tf-fill { 
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-5));
+            max-width: initial;
+        }
+    }
+}
+
+@media (max-width: (@md - 1px)) {
+    .mf-100 { .f-100(); }
+    .mf-50 { .f-50(); }
+    .mf-33 { .f-33(); }
+    .mf-25 { .f-25(); }
+    .mf-20 { .f-20(); }
+    .mf-16 { .f-16(); }
+    .mf-10 { .f-10(); }
+    .mf-8 { .f-8(); }
+    .mf-auto { .f-auto(); }
+    .mf-fill { .f-fill(); }
+
+    .gap-1 {
+        & > .mf-100 { flex: 0 0 100%; }
+        & > .mf-100 { flex: 0 0 100%; }
+        & > .mf-50 { flex: 0 0 calc((100% - (1 * var(--distance-1))) / 2); }
+        & > .mf-33 { flex: 0 0 calc((100% - (2 * var(--distance-1))) / 3); }
+        & > .mf-25 { flex: 0 0 calc((100% - (3 * var(--distance-1))) / 4); }
+        & > .mf-20 { flex: 0 0 calc((100% - (4 * var(--distance-1))) / 5); }
+        & > .mf-16 { flex: 0 0 calc((100% - (5 * var(--distance-1))) / 6); }
+        & > .mf-10 { flex: 0 0 calc((100% - (9 * var(--distance-1))) / 10); }
+        & > .mf-8 { flex: 0 0 calc((100% - (11 * var(--distance-1))) / 12); }
+        & > .mf-fill {
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-1));
+            max-width: initial;
+        }
+    }
+    
+    .gap-2 {
+        & > .mf-100 { flex: 0 0 100%; }
+        & > .mf-50 { flex: 0 0 calc((100% - (1 * var(--distance-2))) / 2); }
+        & > .mf-33 { flex: 0 0 calc((100% - (2 * var(--distance-2))) / 3); }
+        & > .mf-25 { flex: 0 0 calc((100% - (3 * var(--distance-2))) / 4); }
+        & > .mf-20 { flex: 0 0 calc((100% - (4 * var(--distance-2))) / 5); }
+        & > .mf-16 { flex: 0 0 calc((100% - (5 * var(--distance-2))) / 6); }
+        & > .mf-10 { flex: 0 0 calc((100% - (9 * var(--distance-2))) / 10); }
+        & > .mf-8 { flex: 0 0 calc((100% - (11 * var(--distance-2))) / 12); }
+        & > .mf-fill { 
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-2));
+            max-width: initial;
+        }
+    }
+    
+    .gap-3 {
+        & > .mf-100 { flex: 0 0 100%; }
+        & > .mf-50 { flex: 0 0 calc((100% - (1 * var(--distance-3))) / 2); }
+        & > .mf-33 { flex: 0 0 calc((100% - (2 * var(--distance-3))) / 3); }
+        & > .mf-25 { flex: 0 0 calc((100% - (3 * var(--distance-3))) / 4); }
+        & > .mf-20 { flex: 0 0 calc((100% - (4 * var(--distance-3))) / 5); }
+        & > .mf-16 { flex: 0 0 calc((100% - (5 * var(--distance-3))) / 6); }
+        & > .mf-10 { flex: 0 0 calc((100% - (9 * var(--distance-3))) / 10); }
+        & > .mf-8 { flex: 0 0 calc((100% - (11 * var(--distance-3))) / 12); }
+        & > .mf-fill {
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-3));
+            max-width: initial;
+        }
+    }
+    
+    .gap-4 {
+        & > .mf-100 { flex: 0 0 100%; }
+        & > .mf-50 { flex: 0 0 calc((100% - (1 * var(--distance-4))) / 2); }
+        & > .mf-33 { flex: 0 0 calc((100% - (2 * var(--distance-4))) / 3); }
+        & > .mf-25 { flex: 0 0 calc((100% - (3 * var(--distance-4))) / 4); }
+        & > .mf-20 { flex: 0 0 calc((100% - (4 * var(--distance-4))) / 5); }
+        & > .mf-16 { flex: 0 0 calc((100% - (5 * var(--distance-4))) / 6); }
+        & > .mf-10 { flex: 0 0 calc((100% - (9 * var(--distance-4))) / 10); }
+        & > .mf-8 { flex: 0 0 calc((100% - (11 * var(--distance-4))) / 12); }
+        & > .mf-fill {
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-4));
+            max-width: initial;
+        }
+    }
+    
+    .gap-5  {
+        & > .mf-100 { flex: 0 0 100%; }
+        & > .mf-50 { flex: 0 0 calc((100% - (1 * var(--distance-5))) / 2); }
+        & > .mf-33 { flex: 0 0 calc((100% - (2 * var(--distance-5))) / 3); }
+        & > .mf-25 { flex: 0 0 calc((100% - (3 * var(--distance-5))) / 4); }
+        & > .mf-20 { flex: 0 0 calc((100% - (4 * var(--distance-5))) / 5); }
+        & > .mf-16 { flex: 0 0 calc((100% - (5 * var(--distance-5))) / 6); }
+        & > .mf-10 { flex: 0 0 calc((100% - (9 * var(--distance-5))) / 10); }
+        & > .mf-8 { flex: 0 0 calc((100% - (11 * var(--distance-5))) / 12); }
+        & > .mf-fill { 
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-5));
+            max-width: initial;
+        }
+    }
+
+    .mgap-0 {
+        .f-100 { flex: 0 0 100%; }
+        .f-50 { flex: 0 0 calc(100% / 2); }
+        .f-33 { flex: 0 0 calc(100% / 3); }
+        .f-25 { flex: 0 0 calc(100% / 4); }
+        .f-20 { flex: 0 0 calc(100% / 5); }
+        .f-16 { flex: 0 0 calc(100% / 8); }
+        .f-10 { flex: 0 0 calc(100% / 10); }
+        .f-8 { flex: 0 0 calc(100% / 12); }
+        .f-auto {
+            flex: 1 1 auto;
+            min-width: auto;
+            width: initial;
+            max-width: fit-content;
+        }
+        .f-fill {
+            flex: 1;
+            min-width: initial;
+            width: 100%;
+            max-width: initial;
+        }
+
+        .mf-100 { flex: 0 0 100%; }
+        .mf-50 { flex: 0 0 calc(100% / 2); }
+        .mf-33 { flex: 0 0 calc(100% / 3); }
+        .mf-25 { flex: 0 0 calc(100% / 4); }
+        .mf-20 { flex: 0 0 calc(100% / 5); }
+        .mf-16 { flex: 0 0 calc(100% / 8); }
+        .mf-10 { flex: 0 0 calc(100% / 10); }
+        .mf-8 { flex: 0 0 calc(100% / 12); }
+        .mf-auto {
+            flex: 1 1 auto;
+            min-width: auto;
+            width: initial;
+            max-width: fit-content;
+        }
+        .mf-fill {
+            flex: 1;
+            min-width: initial;
+            width: 100%;
+            max-width: initial;
+        }
+    }
+
+    .mgap-1 {
+        & > .f-100 { flex: 0 0 100%; }
+        & > .f-50 { flex: 0 0 calc((100% - (1 * var(--distance-1))) / 2); }
+        & > .f-33 { flex: 0 0 calc((100% - (2 * var(--distance-1))) / 3); }
+        & > .f-25 { flex: 0 0 calc((100% - (3 * var(--distance-1))) / 4); }
+        & > .f-20 { flex: 0 0 calc((100% - (4 * var(--distance-1))) / 5); }
+        & > .f-16 { flex: 0 0 calc((100% - (5 * var(--distance-1))) / 6); }
+        & > .f-10 { flex: 0 0 calc((100% - (9 * var(--distance-1))) / 10); }
+        & > .f-8 { flex: 0 0 calc((100% - (11 * var(--distance-1))) / 12); }
+        & > .f-fill {
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-1));
+            max-width: initial;
+        }
+
+        & > .mf-100 { flex: 0 0 100%; }
+        & > .mf-50 { flex: 0 0 calc((100% - (1 * var(--distance-1))) / 2); }
+        & > .mf-33 { flex: 0 0 calc((100% - (2 * var(--distance-1))) / 3); }
+        & > .mf-25 { flex: 0 0 calc((100% - (3 * var(--distance-1))) / 4); }
+        & > .mf-20 { flex: 0 0 calc((100% - (4 * var(--distance-1))) / 5); }
+        & > .mf-16 { flex: 0 0 calc((100% - (5 * var(--distance-1))) / 6); }
+        & > .mf-10 { flex: 0 0 calc((100% - (9 * var(--distance-1))) / 10); }
+        & > .mf-8 { flex: 0 0 calc((100% - (11 * var(--distance-1))) / 12); }
+        & > .mf-fill { 
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-1));
+            max-width: initial;
+        }
+    }
+    
+    .mgap-2 {
+        & > .f-100 { flex: 0 0 100%; }
+        & > .f-50 { flex: 0 0 calc((100% - (1 * var(--distance-2))) / 2); }
+        & > .f-33 { flex: 0 0 calc((100% - (2 * var(--distance-2))) / 3); }
+        & > .f-25 { flex: 0 0 calc((100% - (3 * var(--distance-2))) / 4); }
+        & > .f-20 { flex: 0 0 calc((100% - (4 * var(--distance-2))) / 5); }
+        & > .f-16 { flex: 0 0 calc((100% - (5 * var(--distance-2))) / 6); }
+        & > .f-10 { flex: 0 0 calc((100% - (9 * var(--distance-2))) / 10); }
+        & > .f-8 { flex: 0 0 calc((100% - (11 * var(--distance-2))) / 12); }
+        & > .f-fill { 
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-2));
+            max-width: initial;
+        }
+
+        & > .mf-100 { flex: 0 0 100%; }
+        & > .mf-50 { flex: 0 0 calc((100% - (1 * var(--distance-2))) / 2); }
+        & > .mf-33 { flex: 0 0 calc((100% - (2 * var(--distance-2))) / 3); }
+        & > .mf-25 { flex: 0 0 calc((100% - (3 * var(--distance-2))) / 4); }
+        & > .mf-20 { flex: 0 0 calc((100% - (4 * var(--distance-2))) / 5); }
+        & > .mf-16 { flex: 0 0 calc((100% - (5 * var(--distance-2))) / 6); }
+        & > .mf-10 { flex: 0 0 calc((100% - (9 * var(--distance-2))) / 10); }
+        & > .mf-8 { flex: 0 0 calc((100% - (11 * var(--distance-2))) / 12); }
+        & > .mf-fill { 
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-2));
+            max-width: initial;
+        }
+    }
+    
+    .mgap-3 {
+        & > .f-100 { flex: 0 0 100%; }
+        & > .f-50 { flex: 0 0 calc((100% - (1 * var(--distance-3))) / 2); }
+        & > .f-33 { flex: 0 0 calc((100% - (2 * var(--distance-3))) / 3); }
+        & > .f-25 { flex: 0 0 calc((100% - (3 * var(--distance-3))) / 4); }
+        & > .f-20 { flex: 0 0 calc((100% - (4 * var(--distance-3))) / 5); }
+        & > .f-16 { flex: 0 0 calc((100% - (5 * var(--distance-3))) / 6); }
+        & > .f-10 { flex: 0 0 calc((100% - (9 * var(--distance-3))) / 10); }
+        & > .f-8 { flex: 0 0 calc((100% - (11 * var(--distance-3))) / 12); }
+        & > .f-fill {
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-3));
+            max-width: initial;
+        }
+
+        & > .mf-100 { flex: 0 0 100%; }
+        & > .mf-50 { flex: 0 0 calc((100% - (1 * var(--distance-3))) / 2); }
+        & > .mf-33 { flex: 0 0 calc((100% - (2 * var(--distance-3))) / 3); }
+        & > .mf-25 { flex: 0 0 calc((100% - (3 * var(--distance-3))) / 4); }
+        & > .mf-20 { flex: 0 0 calc((100% - (4 * var(--distance-3))) / 5); }
+        & > .mf-16 { flex: 0 0 calc((100% - (5 * var(--distance-3))) / 6); }
+        & > .mf-10 { flex: 0 0 calc((100% - (9 * var(--distance-3))) / 10); }
+        & > .mf-8 { flex: 0 0 calc((100% - (11 * var(--distance-3))) / 12); }
+        & > .mf-fill { 
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-3));
+            max-width: initial;
+        }
+    }
+    
+    .mgap-4 {
+        & > .f-100 { flex: 0 0 100%; }
+        & > .f-50 { flex: 0 0 calc((100% - (1 * var(--distance-4))) / 2); }
+        & > .f-33 { flex: 0 0 calc((100% - (2 * var(--distance-4))) / 3); }
+        & > .f-25 { flex: 0 0 calc((100% - (3 * var(--distance-4))) / 4); }
+        & > .f-20 { flex: 0 0 calc((100% - (4 * var(--distance-4))) / 5); }
+        & > .f-16 { flex: 0 0 calc((100% - (5 * var(--distance-4))) / 6); }
+        & > .f-10 { flex: 0 0 calc((100% - (9 * var(--distance-4))) / 10); }
+        & > .f-8 { flex: 0 0 calc((100% - (11 * var(--distance-4))) / 12); }
+        & > .f-fill {
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-4));
+            max-width: initial;
+        }
+
+        & > .mf-100 { flex: 0 0 100%; }
+        & > .mf-50 { flex: 0 0 calc((100% - (1 * var(--distance-4))) / 2); }
+        & > .mf-33 { flex: 0 0 calc((100% - (2 * var(--distance-4))) / 3); }
+        & > .mf-25 { flex: 0 0 calc((100% - (3 * var(--distance-4))) / 4); }
+        & > .mf-20 { flex: 0 0 calc((100% - (4 * var(--distance-4))) / 5); }
+        & > .mf-16 { flex: 0 0 calc((100% - (5 * var(--distance-4))) / 6); }
+        & > .mf-10 { flex: 0 0 calc((100% - (9 * var(--distance-4))) / 10); }
+        & > .mf-8 { flex: 0 0 calc((100% - (11 * var(--distance-4))) / 12); }
+        & > .mf-fill { 
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-4));
+            max-width: initial;
+        }
+    }
+    
+    .mgap-5  {
+        & > .f-100 { flex: 0 0 100%; }
+        & > .f-50 { flex: 0 0 calc((100% - (1 * var(--distance-5))) / 2); }
+        & > .f-33 { flex: 0 0 calc((100% - (2 * var(--distance-5))) / 3); }
+        & > .f-25 { flex: 0 0 calc((100% - (3 * var(--distance-5))) / 4); }
+        & > .f-20 { flex: 0 0 calc((100% - (4 * var(--distance-5))) / 5); }
+        & > .f-16 { flex: 0 0 calc((100% - (5 * var(--distance-5))) / 6); }
+        & > .f-10 { flex: 0 0 calc((100% - (9 * var(--distance-5))) / 10); }
+        & > .f-8 { flex: 0 0 calc((100% - (11 * var(--distance-5))) / 12); }
+        & > .f-fill { 
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-5));
+            max-width: initial;
+        }
+
+        & > .mf-100 { flex: 0 0 100%; }
+        & > .mf-50 { flex: 0 0 calc((100% - (1 * var(--distance-5))) / 2); }
+        & > .mf-33 { flex: 0 0 calc((100% - (2 * var(--distance-5))) / 3); }
+        & > .mf-25 { flex: 0 0 calc((100% - (3 * var(--distance-5))) / 4); }
+        & > .mf-20 { flex: 0 0 calc((100% - (4 * var(--distance-5))) / 5); }
+        & > .mf-16 { flex: 0 0 calc((100% - (5 * var(--distance-5))) / 6); }
+        & > .mf-10 { flex: 0 0 calc((100% - (9 * var(--distance-5))) / 10); }
+        & > .mf-8 { flex: 0 0 calc((100% - (11 * var(--distance-5))) / 12); }
+        & > .mf-fill { 
+            flex: 1;
+            min-width: initial;
+            width: calc(100% - var(--distance-5));
+            max-width: initial;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+table {
+    border-collapse: collapse;
+
+    th,
+    td {
+        text-align: left;
+        vertical-align: top;
+        padding: 0.5rem 1rem 0.5rem 0.5rem;
+    }
+
+    tr td:last-child {
+        padding-right: 1rem;
+    }
+
+    th:has(input),
+    td:has(input) {
+        padding: 0.5rem 0.5rem 0.5rem 1rem;
+    }
+
+    th:has(input) {
+        input[type='checkbox'],
+        input[type='radio'] {
+            position: relative;
+            bottom: 2px;
+        }
+    }
+
+    &.hover tbody tr {
+        &:hover {
+            background-color: var(--table-hover);
+        }
+    }
+
+    &.table {
+        & thead {
+            .border-bottom();
+        }
+
+        & tbody tr {
+            .border-bottom();
+            border-color: var(--light);
+        }
+
+        & tfoot {
+            font-size: small;
+            font-style: italic;
+        }
+    }
+
+    &.sticky-header {
+        & > thead {
+            top: 0;
+            position: sticky;
+            position: -webkit-sticky;
+            z-index: 2;
+            white-space: nowrap;
+            background-color: var(--background);
+            -webkit-box-shadow: 0 1px 4px 0 rgba(var(--shadow-color), 0.16),
+                0 1px 4px 0 rgba(var(--shadow-color), 0.12);
+            box-shadow: 0 1px 4px 0 rgba(var(--shadow-color), 0.16),
+                0 1px 4px 0 rgba(var(--shadow-color), 0.12);
+            border-bottom: 0;
+        }
+    }
+
+    &.striped {
+        tbody tr:nth-child(odd) {
+            background-color: var(--table-stripe);
+        }
+
+        &.hover tbody tr:hover {
+            background-color: var(--table-striped-hover);
+        }
+    }
+
+    &.align-top tr td {
+        vertical-align: top;
+    }
+
+    &.align-middle tr td {
+        vertical-align: middle;
+    }
+
+    &.align-bottom tr td {
+        vertical-align: bottom;
+    }
+}
+.table-container {
+    .border();
+    .border-light();
+
+    /** only target mozilla, so edge won't break */
+    @-moz-document url-prefix() {
+        padding-right: 1.7rem;
+    };
+
+    display: inline-block;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    & table {
+        border-right: 0.5px solid var(--light);
+        width: 100%;
+    }
+}
