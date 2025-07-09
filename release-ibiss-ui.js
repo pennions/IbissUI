@@ -2,7 +2,6 @@
 const { version } = require('./package.json');
 
 const fs = require('fs');
-const { execSync } = require('child_process');
 
 function release() {
     const ibissReleaseDir = `releases/ibiss-ui-v${version}`;

@@ -1,83 +1,84 @@
 .no-scroll {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .text-no-wrap {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .text-normal {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .text-truncate {
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .sticky {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 1000;
-    height: auto;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+  height: auto;
 }
 
 .inline-block {
-    display: inline-block;
+  display: inline-block;
 }
 
 .inline-flex {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 .block {
-    display: block;
+  display: block;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 /* manual device utilities */
 .mobile {
-    @media (min-width: @md) {
-        display: none !important;
-    }
+  @media (min-width: @md) {
+    display: none !important;
+  }
 }
 
 .tablet {
-    display: none;
-    @media (min-width: @md) and (max-width: @lg) {
-        display: inherit !important;
-    }
+  display: none;
+  @media (min-width: @md) and (max-width: @lg) {
+    display: inherit !important;
+  }
 }
 
 .desktop {
-    @media (max-width: @lg) {
-        display: none !important;
-    }
+  @media (max-width: @lg) {
+    display: none !important;
+  }
 }
 
 .small-screen {
-    @media (min-width: (@md + 1px)) {
-        display: none !important;
-    }
+  @media (min-width: (@md + 1px)) {
+    display: none !important;
+  }
 }
 
 .large-screen {
-    @media (max-width: @md) {
-        display: none !important;
-    }
+  @media (max-width: @md) {
+    display: none !important;
+  }
 }
 
 .fit-content {
-    max-width: fit-content !important;
-    max-width: -moz-fit-content !important;
+  max-width: fit-content !important;
+  max-width: -moz-fit-content !important;
 }
 
 .list-style-none {
-    list-style: none !important;
+  list-style: none !important;
+  margin-left: 0;
 }

@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "node ./build-ibiss-ui.js",
-    "release": "node ./release-ibiss-ui.js",
-    "release:again": "node ./release-ibiss-ui.js release-again" 
+    "release": "node ./build-ibiss-ui.js && node ./release-ibiss-ui.js",
+    "release:again": "node ./build-ibiss-ui.js && node ./release-ibiss-ui.js release-again" 
   },
   "repository": {
     "type": "git",
