@@ -39,7 +39,7 @@ a {
     color: var(--button-color);
     text-decoration: none;
 
-    &:has(*) {
+    &:not(:empty) {
       max-height: 4.2rem;
       height: 4.2rem;
       display: inline-flex;
